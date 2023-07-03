@@ -1,0 +1,33 @@
+{
+  "name": "yzhantt",
+  "version": "1.0.2",
+  "bin": {
+    "yzhantt": "src/index.js"
+  },
+  "files": [
+    "src/*",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "tt",
+    "Typing Tutor IV",
+    "typeing practice",
+    "打字练习",
+    "DOS"
+  ],
+  "description": "Simplified Node.js CLI version of Typing Tutor IV. DOSS 打字练习软件 TT 的 Node.js 命令行简化版",
+  "author": "shonwu",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "word-list-json": "^0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@mtf.github.com:mantoufan/yzhanTT.git"
+  }
+}
