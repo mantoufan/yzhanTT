@@ -25,7 +25,7 @@ module.exports = class YZhanTT {
   }
   draw() {
     const { matrix, height, width, drawed } = this
-    if (drawed === true) stdin.write('\x1b[' + (height + 2) + 'A' + '\x1b[' + (width + 2) + 'D')
+    if (drawed === true) stdout.write('\x1b[' + (height + 2) + 'A' + '\x1b[' + (width + 2) + 'D')
     else this.drawed = true
     this.drawBorderLine()
     for (let i = 0; i < height; i++) {
@@ -93,7 +93,6 @@ module.exports = class YZhanTT {
     return this.visiters[prop] !== void 0 && this.visiters[prop].call(this, ...args)
   }
   focus(visiters) {
-    let state = null
     this.visiters = visiters
     this.visit('init')
     if (this.focused == true) return

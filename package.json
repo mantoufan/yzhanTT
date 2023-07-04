@@ -1,6 +1,6 @@
 {
   "name": "yzhantt",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "bin": {
     "yzhantt": "src/index.js"
   },
@@ -22,9 +22,11 @@
     "start": "node src/index.js",
     "test": "jest"
   },
-  "devDependencies": {
-    "jest": "^29.5.0",
+  "dependencies": {
     "word-list-json": "^0.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   },
   "repository": {
     "type": "git",
